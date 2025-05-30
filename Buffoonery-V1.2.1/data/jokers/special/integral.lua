@@ -47,6 +47,7 @@ SMODS.Joker {
 			SMODS.calculate_individual_effect = origCalcIndiv
 			card.ability.extra.check = true
 			card.ability.extra.mult_amount = 1
+			card.ability.extra.mult_joker = nil
 		end
     end,
 	remove_from_deck = function(self,card,context)
