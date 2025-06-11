@@ -277,7 +277,7 @@ function CodexArcanum.INIT.CA_Jokers()
     end
     
     function SMODS.Jokers.j_catalyst_joker.calculate(card, context)
-        if context.cardarea == G.jokers and not context.after and not context.before then
+        if context.joker_main and context.cardarea == G.jokers and not context.after and not context.before then
         return {
             message = localize{type='variable',key='a_xmult',vars={1 + card.ability.extra.bonus * card.ability.consumeable_tally}},
             Xmult_mod = 1 + card.ability.extra.bonus * card.ability.consumeable_tally, 
