@@ -27,8 +27,8 @@ return {
             j_kcvanilla_composition = {
                 name = "抽象画",
                 text = {
-                    "每有一个在左边的小丑牌,{C:mult}+#1#{}倍率",
-                    "每有一个在右边的小丑牌{C:chips}+#2#{}筹码，",
+                    "此牌左侧每有一张小丑牌，{C:mult}+#1#{}倍率",
+                    "此牌左侧每有一张小丑牌，{C:chips}+#2#{}筹码",
                     "{C:inactive}(当前{C:mult}+#3#{C:inactive}倍率和{C:chips}+#4#{C:inactive}筹码){}"
                     }
             },
@@ -84,7 +84,7 @@ return {
                 name = "小丑红包",
                 text = {
                     '当Boss盲注被击败时，',
-                    '每有一个{C:blue}普通{}Joker',
+                    '每有一个{C:blue}普通{}小丑',
                     '获得{C:money}$8{}'
                     }
             },

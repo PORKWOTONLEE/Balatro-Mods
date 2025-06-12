@@ -20,9 +20,8 @@ return {
             j_sdm_bounciest_ball = {
                 name = "弹力球",
                 text = {
-                    "当出牌次数最多的{C:attention}牌型计分时{},",
-                    "这张牌增加 {C:chips}+#2#{} 筹码 ",
-                    "halved on {C:attention}different hand{}",
+                    "当打出的牌计分时，如果牌型是{C:attention}出牌次数最多{}的牌型时",
+                    "这张牌增加 {C:chips}+#2#{} 筹码，否则此牌筹码减半",
                     "{C:inactive}(当前 {C:attention}#3#{C:inactive}, {C:chips}+#1#{C:inactive} 筹码)"
                 }
             },
@@ -55,7 +54,7 @@ return {
                 name = "月球基地",
                 text = {
                     "选择 {C:attention}盲注{} 后",
-                    "创建一个随机的{C:attention}Space{}小丑",
+                    "创建一个随机的{C:attention}太空{}小丑",
                     "{s:0.8,C:inactive}(不能创建月球基地)",
                     "{C:inactive}(必须有空间)"
                 }
@@ -164,7 +163,7 @@ return {
                 name = "忍者小丑",
                 text = {
                     "如果打出的牌 {C:attention}被摧毁{},",
-                    "创建一个 a {C:dark_edition}负片{C:attention} 标签{} ",
+                    "创建一个 A {C:dark_edition}负片{C:attention} 标签{} ",
                     "添加一张牌后失效",
                     "{C:inactive}(当前 {C:attention}#1#{C:inactive}#2#{C:inactive})"
                 }
@@ -256,7 +255,7 @@ return {
                 }
             },
             j_sdm_water_slide = {
-                name = "Water Slide",
+                name = "水上乐园",
                 text = {
                     "这张牌增加 {C:chips}+#1#{}筹码",
                     "如果计分牌包含a {C:attention}9{}, {C:attention}7{} 或 {C:attention}6",
@@ -404,11 +403,11 @@ return {
         },
         Other = {
             space_jokers = {
-                name = "Space Jokers",
+                name = "太空小丑",
                 text = {
-                    "Astronomer, Constellation,",
-                    "Rocket, Satellite,",
-                    "Space Joker, Supernova etc.",
+                    "包括天文学家，星座，",
+                    "火箭，卫星，",
+                    "太空小丑，超新星等",
                 }
             },
             modified_card = {

@@ -263,7 +263,7 @@ if config.j_jank_midnight_crew then
         key = "midnight_crew",
         config = {
             extra = {
-                suit = "Spades",
+                suit = "黑桃",
                 x_mult = 1,
             },
         },
@@ -306,7 +306,7 @@ if config.j_jank_midnight_crew then
             }
         end
         if context.end_of_round and not context.blueprint and not (context.individual or context.repetition) then
-            local midnight_suits = { "Spades", "Diamonds", "Hearts", "Clubs" }
+            local midnight_suits = { "黑桃", "方片", "红桃", "梅花" }
             local midnight_picker = pseudorandom_element({ 1, 2, 3, 4 }, pseudoseed('midnight_crew'))
             card.ability.extra.suit = midnight_suits[midnight_picker]
             G.E_MANAGER:add_event(Event({
@@ -380,7 +380,7 @@ if config.j_jank_impractical then
         config = {
             extra = {
                 x_mult = 3,
-                poker_hand = "High Card",
+                poker_hand = "高牌",
             }
         },
         rarity = 2,
@@ -1633,7 +1633,7 @@ if config.j_jank_self_portrait then
         key = "self_portrait",
         config = {
             extra = {
-                ability_loc_txt =  "use a Tarot card",
+                ability_loc_txt =  "使用一张塔罗牌",
                 ability_state = 1,
                 x_mult = 1
             }

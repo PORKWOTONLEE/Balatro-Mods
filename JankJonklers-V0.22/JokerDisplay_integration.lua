@@ -68,11 +68,11 @@ jd_def["j_jank_midnight_crew"] = { -- Midnight Crew
     },
     calc_function = function(card)
         card.joker_display_values.localized_text_flush = localize('Flush', "poker_hands")
-        card.joker_display_values.localized_text_suit = localize(card.ability.extra.suit or "Spades", 'suits_plural')
+        card.joker_display_values.localized_text_suit = localize(card.ability.extra.suit or "黑桃", 'suits_plural')
     end,
     style_function = function(card, text, reminder_text, extra)
         if reminder_text and reminder_text.children[4] then
-            reminder_text.children[4].config.colour = lighten(G.C.SUITS[card.ability.extra.suit or "Spades"], 0.35)
+            reminder_text.children[4].config.colour = lighten(G.C.SUITS[card.ability.extra.suit or "黑桃"], 0.35)
         end
         return false
     end

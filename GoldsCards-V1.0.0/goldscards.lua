@@ -44,7 +44,7 @@ SMODS.Enhancement {
 SMODS.Consumable {
     key = 'spectrum',
     loc_txt = {
-        name = 'Spectrum',
+        name = '光谱',
         text = {
             '将 {C:attention}2{}张牌变为',
             '{C:red,E:1,s:2}彩{}{C:attention,E:1,s:2}虹{}{E:1,s:2}牌{} '}

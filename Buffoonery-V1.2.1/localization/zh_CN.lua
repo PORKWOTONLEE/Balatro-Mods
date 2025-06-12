@@ -148,6 +148,21 @@ return {
 						"{C:inactive}(当前{} {C:mult}+#1#{} {C:inactive}倍率){}"
 				}
 			},
+			j_buf_jokergebra = {
+				name = "几何小丑",
+				text = {"获得{C:attention}左侧{}小丑倍率总和",
+						" {C:attention}五倍{} 数量的 {C:chips}筹码{}",
+						"{C:buf_spc,s:0.7}#1# 倍率!{}"
+				}
+			},
+			j_buf_integral = { -- Special (JokerGebra)
+				name = "积分小丑",
+				text = {"计分时，小丑牌触发的每 {X:mult,C:white}X1{} 倍率",
+						"都会获得 {X:expchips,C:white}^0.02{} 筹码",
+				},
+				unlock = {"满足{C:attention}几何小丑的{E:1,C:buf_spc}特别需求{}即可解锁",
+				}
+			},
 			j_buf_korny = {
 				name = "科恩小丑",
 				text = {"在{C:attention}小盲注{}、{C:attention}大盲注{}",
@@ -226,6 +241,36 @@ return {
 						"如果此几率达到{C:green}1/2{}仍未触发",
 						"创造一个随机的{C:legendary}传奇{}小丑",
 						"{C:inactive,s:0.7}(每回合概率增加)"
+				}
+			},
+			j_buf_sayajimbo = {
+				name = "赛亚金宝",
+				text = {"{C:chips}+#1#{} 筹码",
+						"单次出牌计分达到 {C:attention}#2#{}",
+						"就可以 {C:attention}进化{}",
+						"{C:inactive}(下一等级： {C:mult}+20{C:inactive} 倍率)",
+				}
+			},
+			j_buf_sayajimbo_s1 = {
+				name = "超级赛亚金宝",
+				text = {"{C:mult}+#1#{} 倍率",
+						"单次出牌计分达到 {C:attention}#6#{}",
+						"#5# 次就可以 {C:attention}进化{}",
+						"{C:inactive}(#4#/#5#, 下一等级: {X:mult,C:white}X3{C:inactive} 倍率)",
+				}
+			},
+			j_buf_sayajimbo_s2 = {
+				name = "超级赛亚金宝II",
+				text = {"{X:mult,C:white}X#2#{} 倍率",
+						"单次出牌计分达到 {C:attention}#6#{}",
+						"#5# 次就可以 {C:attention}进化{}",
+						"{C:inactive}(#4#/#5#, 下一等级: {X:expmult,C:white}^1.3{C:inactive} 倍率)",
+				}
+			},
+			j_buf_sayajimbo_s3 = {
+				name = "超级赛亚金宝III",
+				text = {"{X:expmult,C:white}^#3#{} 倍率",
+						"{C:inactive}WOW！"
 				}
 			},
 			j_buf_whitepony = {
