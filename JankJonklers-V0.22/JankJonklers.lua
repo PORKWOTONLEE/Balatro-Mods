@@ -1256,7 +1256,9 @@ if config.j_jank_suspicious_vase then
                 context.other_card:set_ability(G.P_CENTERS.m_glass, nil, true)
                 G.E_MANAGER:add_event(Event({
                     func = function()
-                        context.other_card:juice_up()
+                        if context.other_card ~= nil then
+                            context.other_card:juice_up()
+                        end
                         return true
                     end
                 }))
