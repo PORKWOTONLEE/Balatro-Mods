@@ -282,11 +282,11 @@ jd_def["j_sdm_infinite_staircase"] = { -- Infinite Staircase
 jd_def["j_sdm_ninja_joker"] = { -- Ninja Joker
     reminder_text = {
         { text = "(" },
-        { ref_table = "card.joker_display_values", ref_value = "active" },
+        { ref_table = "card.joker_display_values", ref_value = "激活" },
         { text = ")" },
     },
     calc_function = function(card)
-        card.joker_display_values.active = card.ability.extra.can_dupe and localize("k_active_ex") or "Inactive"
+        card.joker_display_values.active = card.ability.extra.can_dupe and "激活" or "未激活"
     end,
     style_function = function(card, text, reminder_text, extra)
         if reminder_text and reminder_text.children[2] then
@@ -377,7 +377,7 @@ jd_def["j_sdm_cupidon"] = { -- Cupidon
 jd_def["j_sdm_pizza"] = { -- Pizza
     reminder_text = {
         { text = "(+" },
-        { ref_table = "card.ability.extra", ref_value = "hands" },
+        { ref_table = "card.ability.extra", ref_value = "出牌次数" },
         { text = ")" },
     },
 }

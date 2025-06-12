@@ -739,7 +739,7 @@ function deck_select_page_stake()
     local deck_preview = Galdur.display_deck_preview()
     deck_preview.nodes[#deck_preview.nodes+1] = {n = G.UIT.R, config={align = 'cm', padding = 0.15}, nodes = {
         {n=G.UIT.C, config = {maxw = 2.5, minw = 2.5, minh = 0.8, r = 0.1, hover = true, ref_value = 1, button = 'random_stake', colour = Galdur.badge_colour, align = "cm", emboss = 0.1}, nodes = {
-            {n=G.UIT.R, config = {align = 'cm'}, nodes = {{n=G.UIT.T, config={text = "Random Stake", scale = 0.4, colour = G.C.WHITE}}}},
+            {n=G.UIT.R, config = {align = 'cm'}, nodes = {{n=G.UIT.T, config={text = "随机赌注", scale = 0.4, colour = G.C.WHITE}}}},
             {n=G.UIT.R, config = {align = 'cm'}, nodes = {{n=G.UIT.C, config={func = 'set_button_pip', focus_args = { button = 'triggerright', set_button_pip = true, offset = {x=-0.2, y = 0.3} }}}}}            
         }}
     }}

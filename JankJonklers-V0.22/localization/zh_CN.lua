@@ -19,14 +19,14 @@ return {
 			j_jank_self_portrait = {
 				name = "小丑自画像",
 				text = {
+					"{C:attention}#1#{}.",
 					"获得 {X:mult,C:white}X0.1{} 倍率",
-					"whenever you {C:attention}#1#{}.",
-					"Changes every blind.",
-					"{C:inactive}(当前 {X:mult,C:white}X#2#{}{C:inactive} Mult){}",
+					"获得的倍率每个盲注都会改变",
+					"{C:inactive}(当前 {X:mult,C:white}X#2#{}{C:inactive} 倍率){}",
 				},
 			},
 			j_jank_mural_menace = {
-				name = "Mural Menace",
+				name = "危险涂鸦",
 				text = {
 					"当你跳过 {C:attention}盲注{}",
 					"创建一个随机的 {C:attention}标签{}",
@@ -78,7 +78,7 @@ return {
 				},
 			},
 			j_jank_fortuno = {
-				name = "Fortuno",
+				name = "佛图诺",
 				text = {
 					"每回合第一次出牌时",
 					"每张计分的{C:attention}数字牌{} ",
@@ -165,14 +165,14 @@ return {
 				},
 			},
 			j_jank_feste = {
-				name = "Feste",
+				name = "佛斯特",
 				text = {
 					"再 {C:attention}Boss 盲注{}时第一次出牌的牌型",
 					"升 {C:attention}#1#{} 级",
 				},
 			},
 			j_jank_chicken_scratch = {
-				name = "Chicken Scratch",
+				name = "公鸡抓痕",
 				text = {
 					"如果计分的牌包含",
 					" {C:attention}8{}, {C:attention}7{}, 或 {C:attention}3{}",
@@ -214,7 +214,7 @@ return {
 				name = "午夜剧团",
 				text = {
 					"如果计分牌是包含 {V:1}#1#{}的",
-					"{C:attention}同化 {}",
+					"{C:attention}同花 {}",
 					"这张牌增加 {X:mult,C:white} X0.5 {} 倍率",
 					"每回合改变",
 					"{C:inactive}(当前 {X:mult,C:white}X#2#{C:inactive})",
@@ -223,9 +223,9 @@ return {
 			j_jank_makeshift = {
 				name = "临时小丑",
 				text = {
-					"This Joker gains {C:mult}+#2#{} Mult",
-					"per {C:attention}card{} sold",
-					"{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
+					"每卖掉 {C:attention}{一张牌} ",
+					"此小丑牌增加 {C:mult}+#2#{} 倍率",
+					"{C:inactive}(当前 {C:mult}+#1#{C:inactive} 倍率)",
 				},
 			},
 			j_jank_sir = {

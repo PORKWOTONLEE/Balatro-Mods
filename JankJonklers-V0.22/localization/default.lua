@@ -233,11 +233,11 @@ return {
 				},
 			},
 			j_jank_makeshift = {
-				name = "Makeshift Joker",
+				name = "临时小丑",
 				text = {
-					"This Joker gains {C:mult}+#2#{} Mult",
-					"per {C:attention}card{} sold",
-					"{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
+					"每卖掉 {C:attention}{一张牌} ",
+					"此小丑牌增加 {C:mult}+#2#{} 倍率",
+					"{C:inactive}(当前 {C:mult}+#1#{C:inactive} 倍率)",
 				},
 			},
 			j_jank_sir = {
@@ -288,14 +288,14 @@ return {
 			c_jankch_LoJ = "Legend of Jimbo",
 		},
 		dictionary = {
-			self_portrait_1 = "use a Tarot card",
-            self_portrait_2 = "use a Planet card",
-            self_portrait_3 = "destroy a card",
-            self_portrait_4 = "play a hand with 3 or fewer cards",
-            self_portrait_5 = "discard 3 or more face cards",
-            self_portrait_6 = "play a High Card",
-            self_portrait_7 = "play a Straight",
-            self_portrait_8 = "play a Flush",
+			self_portrait_1 = "使用一张塔罗牌",
+            self_portrait_2 = "使用一张星球牌",
+            self_portrait_3 = "摧毁一张牌",
+            self_portrait_4 = "打出少于等于三张的牌",
+            self_portrait_5 = "丢弃三张以上的人头牌",
+            self_portrait_6 = "打出高牌",
+            self_portrait_7 = "打出顺子",
+            self_portrait_8 = "打出同花",
 		}
 	}
 }
