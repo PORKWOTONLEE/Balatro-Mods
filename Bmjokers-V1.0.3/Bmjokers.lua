@@ -365,14 +365,14 @@ SMODS.Joker{
     end,
     calculate = function(self, card, context)
         if context.cardarea == G.hand then
-            if context.other_card:is_face() and not context.other_card.debuff then
+            if context.other_card ~= nill and context.other_card:is_face() and not context.other_card.debuff then
                 if context.individual and not context.end_of_round then
                     return{
                         x_mult = card.ability.extra.x_mult,
                         card = card
                     }
                 elseif context.repetition and not context.end_of_round then
-                    if context.other_card.ability.effect == 'Steel Card' then
+                    if context.other_card ~= nill and context.other_card.ability.effect == 'Steel Card' then
                         return{
                             message = localize('k_again_ex'),
                             repetitions = card.ability.extra.repetitions,
@@ -380,7 +380,7 @@ SMODS.Joker{
                         }
                     end
                 elseif context.repetition and context.end_of_round then
-                    if context.other_card.ability.effect == 'Steel Card' then
+                    if context.other_card ~= nill and context.other_card.ability.effect == 'Steel Card' then
                         if (next(context.card_effects[1]) or #context.card_effects > 1) then
                             return{
                                 message = localize('k_again_ex'),
