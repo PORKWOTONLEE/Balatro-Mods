@@ -1170,7 +1170,7 @@ if config.j_jank_cut_the_cheese then
                         return true
                     end
                 }))
-                card_eval_status_text(context.blueprint_card or self, 'extra', nil, nil, nil,
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil,
                     { message = localize('k_plus_joker'), colour = G.C.BLUE })
             end
         end
